@@ -46,6 +46,9 @@ public class Request {
 
     /// The progress of the request lifecycle.
     public var progress: NSProgress { return delegate.progress }
+    
+    /// The domain to identify which request it is
+    public var domain: String = ""
 
     // MARK: - Lifecycle
 

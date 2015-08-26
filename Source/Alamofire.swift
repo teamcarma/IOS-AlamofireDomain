@@ -77,11 +77,18 @@ extension NSURLRequest: URLStringConvertible {
 public protocol URLRequestConvertible {
     /// The URL request.
     var URLRequest: NSURLRequest { get }
+    var domain: String { get }
 }
 
 extension NSURLRequest: URLRequestConvertible {
     public var URLRequest: NSURLRequest {
         return self
+    }
+    
+    public var domain: String {
+        get {
+            return ""
+        }
     }
 }
 
@@ -127,7 +134,12 @@ public func request(method: Method, URLString: URLStringConvertible, parameters:
     :returns: The created request.
 */
 public func request(URLRequest: URLRequestConvertible) -> Request {
-    return Manager.sharedInstance.request(URLRequest.URLRequest)
+    
+    let request = Manager.sharedInstance.request(URLRequest)
+    
+    request.domain = URLRequest.domain
+    
+    return request
 }
 
 // MARK: - Upload Methods
