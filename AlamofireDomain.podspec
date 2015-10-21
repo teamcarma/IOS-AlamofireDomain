@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name = 'AlamofireDomain'
-  s.version = '1.3.2'
+  s.version = '2.0.0'
   s.license = 'MIT'
   s.summary = 'Elegant HTTP Networking in Swift, with addition domain identifier'
   s.homepage = 'https://github.com/tonyli508/AlamofireDomain'
   s.social_media_url = 'https://twitter.com/tonyli508'
-  s.authors = { 'Alamofire Software Foundation' => 'info@alamofire.org' }
+  s.authors = { 'Li Jiantang' => 'tonyli508@gmail.com' }
   s.source = { :git => 'https://github.com/tonyli508/AlamofireDomain.git', :tag => s.version }
 
   s.ios.deployment_target = '8.0'
