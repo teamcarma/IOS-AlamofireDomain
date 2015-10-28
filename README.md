@@ -6,6 +6,9 @@
 [![Platform](https://img.shields.io/cocoapods/p/Alamofire.svg?style=flat)](http://cocoadocs.org/docsets/Alamofire)
 [![Twitter](https://img.shields.io/badge/twitter-@AlamofireSF-blue.svg?style=flat)](http://twitter.com/AlamofireSF)
 
+## IOS 7 Support
+This fork is mainly for IOS 7 support, for how to use Swift pods visit  [IOS 7 Support](https://github.com/tonyli508/ForkmanForSwiftPodsWithIOS7)
+
 Alamofire is an HTTP networking library written in Swift.
 
 ## Features
